@@ -9,7 +9,20 @@
 
 Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if(number<100)
+if(number<100||number>= 1000)
+{
+    Console.WriteLine("Число не трехзначное");
+}
+else
+{
+    int secondRank = number / 10 % 10;
+Console.WriteLine(secondRank);
+}
+
+/*
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if(number<100||number>= 1000)
 {
     Console.WriteLine("Число не трехзначное");
 }
@@ -23,3 +36,6 @@ else
    Console.Write(s[1]+" ");
 }
 }
+*/
+
+
