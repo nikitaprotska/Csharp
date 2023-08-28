@@ -3,8 +3,9 @@
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
 */
-
-int [] numbers = new int[8];
+Console.WriteLine("Введите длину массива: ");
+int usernumber = Convert.ToInt32(Console.ReadLine());
+int [] numbers = new int[usernumber];
 Console.Write("[");
 
 for (int i = 0; i < numbers.Length; i++)
